@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>
+      Мини-галерея, которая показывает изображение в полном размере при клике на
+      миниатюру
+    </title>
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        class="thumbnails"
+        src="https://img.freepik.com/premium-photo/there-is-cat-that-is-laying-blanket-with-teddy-bear-generative-ai_1035433-4300.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+        data-full="https://img.freepik.com/premium-photo/there-is-cat-that-is-laying-blanket-with-teddy-bear-generative-ai_1035433-4300.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+      />
+      <img
+        class="thumbnails"
+        src="https://img.freepik.com/premium-photo/there-is-small-kitten-that-is-laying-blanket-generative-ai_1035433-7763.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+        data-full="https://img.freepik.com/premium-photo/there-is-small-kitten-that-is-laying-blanket-generative-ai_1035433-7763.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+      />
+      <img
+        class="thumbnails"
+        src="https://img.freepik.com/free-photo/closeup-vertical-shot-cute-european-shorthair-cat_181624-34587.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+        data-full="https://img.freepik.com/free-photo/closeup-vertical-shot-cute-european-shorthair-cat_181624-34587.jpg?ga=GA1.1.977251122.1729149089&semt=ais_hybrid"
+      />
+    </div>
+
+    <div class="modal" id="modal">
+      <img id="fullImage" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
