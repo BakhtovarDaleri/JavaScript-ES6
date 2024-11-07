@@ -1,0 +1,18 @@
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+label,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+.button {
+  width: 250px;
+  height: 30px;
+  cursor: pointer;
+}
+#comments {
+  min-width: 230px;
+  min-height: 20px;
+}

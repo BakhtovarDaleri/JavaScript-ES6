@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Форма опроса</h1>
+    <form id="survey-form" action="#" target="_blank">
+      <div class="form-group">
+        Имя пользователя:<input id="name" type="text" required />
+      </div>
+
+      <div class="form-group">
+        Email:<input id="email" type="email" required />
+      </div>
+
+      <div class="form-group">
+        Пол:<input
+          type="radio"
+          name="gender"
+          id="male"
+          value="male"
+          required
+        />Мужской
+        <input
+          type="radio"
+          name="gender"
+          id="female"
+          value="female"
+          required
+        />Женский
+      </div>
+      <div class="form-group">
+        Оценка сервиса:
+        <input
+          id="service"
+          style="cursor: pointer"
+          type="range"
+          min="1"
+          max="10"
+          step="1"
+        />
+      </div>
+      <div class="form-group">
+        <label>Интересы пользователя:</label>
+        <input name="hobby" type="checkbox" id="sport" value="sport" />Спорт
+        <input name="hobby" type="checkbox" id="music" value="music" />Музыка
+        <input
+          name="hobby"
+          type="checkbox"
+          id="travel"
+          value="travel"
+        />Путешествия
+        <input name="hobby" type="checkbox" id="cinema" value="cinema" />Кино
+      </div>
+
+      <div class="form-group">
+        <label> Дополнительные комментарии:</label
+        ><textarea id="comments" name="comments"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button class="button" type="submit">Отправить</button>
+      </div>
+    </form>
+
+    <div id="results"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
