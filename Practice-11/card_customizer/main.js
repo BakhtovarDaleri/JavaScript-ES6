@@ -1,6 +1,10 @@
-const cardTextInput = document.getElementById("cardText");
-const colorPicker = document.getElementById("colorPicker");
-const card = document.getElementById("card");
+const cardTextInput = document.querySelector("#cardText");
+const colorPicker = document.querySelector("#colorPicker");
+const card = document.querySelector("#card");
+const cardBackground = document.querySelector(".card-container");
+const resetButton = document.querySelector("#resetButton");
+const defaultText = "Ваша карта";
+const defaultColor = "";
 
 // Слушатель события input для обновления текста карты
 cardTextInput.addEventListener("input", () => {
@@ -21,5 +25,16 @@ cardTextInput.addEventListener("blur", () => {
 
 // Слушатель события change для изменения цвета карты
 colorPicker.addEventListener("change", () => {
-  card.style.backgroundColor = colorPicker.value;
+  cardBackground.style.backgroundColor = colorPicker.value;
+});
+
+//Сбрасываем текс на карте
+resetButton.addEventListener("click", () => {
+  card.textContent = defaultText;
+  cardTextInput.value = "";
+
+  //Сбрасываем цвет  карты к цвету по умолчанию
+
+  cardBackground.style.backgroundColor = defaultColor;
+  colorPicker.value = "";
 });

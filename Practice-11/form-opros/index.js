@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
   document
     .querySelectorAll('input[name="hobby"]:checked')
     .forEach((checkbox) => {
-      hobbies.push(checkbox.nextElementSibling.textContent); //Получаем текст рядом с чекбоксом
+      hobbies.push(checkbox.value); //Получаем текст рядом с чекбоксом
     });
 
   // Формирование результата
